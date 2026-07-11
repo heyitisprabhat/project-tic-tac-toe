@@ -7,6 +7,55 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div>Tic-Tac-Toe</div>
+    <div class="score-board">
+      <div id="rounds">Pick Players' Names</div>
+      <div class="player-one">
+        <p id="player-one-name">Player One :</p>
+        <p id="player-one-score">0</p>
+      </div>
+      <div class="player-two">
+        <p id="player-two-name">Player Two :</p>
+        <p id="player-two-score">0</p>
+      </div>
+      <button id="reset-round">Next Round</button>
+      <button id="reset-game">New Game</button>
+    </div>
+    <div>
+      <div class="game-board">
+        <div class="cells" id="0"></div>
+        <div class="cells" id="1"></div>
+        <div class="cells" id="2"></div>
+        <div class="cells" id="3"></div>
+        <div class="cells" id="4"></div>
+        <div class="cells" id="5"></div>
+        <div class="cells" id="6"></div>
+        <div class="cells" id="7"></div>
+        <div class="cells" id="8"></div>
+      </div>
+
+      <div id="round-headline"></div>
+      <div id="game-headline"></div>
+    </div>
+
+    <form id="player-form">
+      <fieldset>
+        <legend>Enter Players' names</legend>
+        <p>
+          <label for="input-player-one"
+            >Player One Name <input type="text" id="input-player-one" required
+          /></label>
+        </p>
+        <p>
+          <label for="input-player-two"
+            >Player Two Name <input type="text" id="input-player-two" required
+          /></label>
+        </p>
+
+        <input type="submit" id="submit-btn" value="Submit" />
+      </fieldset>
+    </form>
+
     <script src="script.js"></script>
   </body>
 </html>
