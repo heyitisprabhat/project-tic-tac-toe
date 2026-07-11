@@ -270,7 +270,6 @@ SubmitBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   if (
-    game.getRound() >= 1 &&
     game.getRound() < 4 &&
     !game.getBoardValues().every((cell) => cell === "")
   ) {
